@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__content">
+                <div class="header__headlines">
+                    <h1 class="header__title">
+                        Рената Лузикова
+                    </h1>
+                    <h2 class="header__subtitle">
+                        Начинающий frontend - разработчик
+                    </h2>
+                </div>
+                <div class="header__contacts">
+                    <a class="header__contacts-link" href='https://t.me/telegram' target="_blank">
+                        <svg class="header__contacts-svg">
+                            <use href="./images/sprite.svg#whatsapp"></use>
+                        </svg>
+                    </a>
+                    <a class="header__contacts-link" href='https://t.me/telegram' target="_blank">
+                        <svg class="header__contacts-svg">
+                            <use href="./images/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a class="header__contacts-link link-email" href='https://t.me/telegram' target="_blank">
+                        <svg class="header__contacts-svg email">
+                            <use href="./images/sprite.svg#email"></use>
+                        </svg>
+                    </a>
+                  
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <h2 class="main__title">
+                Портфолио
+            </h2>
+
+            <div class="main__content">
+                <div class="main__item">
+
+                    <a class="main__link" href="https://redjanis.github.io/knife-workshop/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="main__img" src="./images/knife-workshop.png" alt="">
+                    </a>
+
+                    <div class="main__description">
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Веб-сайт:
+                            </span>
+                            «Ножевая мастерская Александра Трусова»
+                            <span class="main__text_red">
+                                (в разработке).
+                            </span>
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Примененные технологии:
+                            </span>
+                            scss, native js, jquery (для slick slider), gulp.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Задача:
+                            </span>
+                            сделать информативный сайт, на котором пользователи могли бы ознакомиться с услугами
+                            мастера, условиями заказа товаров, а также просмотреть каталог этих товаров. На сайте
+                            нет возможности заказа, но предусмотрена форма обратной связи.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Особенности:
+                            </span>
+                            в html на весь сайт создана одна основная страница с несколькими тегами main. Каждому тегу
+                            main соответствует своя страница на сайте. Активная страница – это включение
+                            соответствующего тега main и скрытие остальных (путем добавления атрибута hidden). Это
+                            сделано для ускорения работы сайта при переключении между страницами. При обновлении сайта
+                            пользователь останется на текущей «странице», так как информация об активном теге main
+                            сохраняется в sessionStorage.</br>
+                            Весь каталог товаров хранится непосредственно в корне проекта (не на сервере). Загрузка всех
+                            карточек товаров на страницу сделана через javascript. В каталоге реализована возможность
+                            сортировки товаров, пагинация, кнопка «Показать еще». Также реализована возможность поиска
+                            по каталогу.</br>
+                            Для ускорения загрузки изображений в тег img добавлены атрибуты width и height.</br>
+                            Адаптив, форма обратной связи, страница 404 - пока в разработке.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Ссылка на код:
+                            </span>
+                            <a class="main__link-pass"
+                                href="https://github.com/ReDjanis/knife-workshop/tree/editMainPage" target="_blank">
+                                github.com/ReDjanis/knife-workshop
+                            </a>
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Дизайн:
+                            </span>
+                            верстка без макета, дизайн продуман самостоятельно, согласован с заказчиком.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__item">
+
+                    <a class="main__link" href="http://notarius-mokroborodova.ru/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="main__img" src="./images/notary.png" alt="">
+                    </a>
+
+                    <div class="main__description">
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Веб-сайт:
+                            </span>
+                            «Мокробородова Е.Г., сайт нотариуса г. Москвы»
+                            <span class="main__text_green">
+                                (действующий).
+                            </span>
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Примененные технологии:
+                            </span>
+                            react, scss.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Задача:
+                            </span>
+                            модернизация существующего сайта, сделанного на wordpress. Полностью сверстать на react,
+                            сделать адаптив до мобильной версии.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Особенности:
+                            </span>
+                            простой сайт без сложной логики.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Ссылка на код:
+                            </span>
+                            <a class="main__link-pass" href="https://github.com/ReDjanis/notary-react/tree/main"
+                                target="_blank">
+                                github.com/ReDjanis/notary-react
+                            </a>
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Дизайн:
+                            </span>
+                            верстка в соответствии с существующим дизайном сайта.
+                        </p>
+                    </div>
+                </div>
+                <div class="main__item">
+
+                    <a class="main__link" href="https://redjanis.github.io/JS-practice/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="main__img" src="./images/form.png" alt="">
+                    </a>
+
+                    <div class="main__description">
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Веб-сайт:
+                            </span>
+                            Форма входа/авторизации
+                            <span class="main__text_blue">
+                                (учебный).
+                            </span>
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Примененные технологии:
+                            </span>
+                            native js.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Задача:
+                            </span>
+                            Выполнить формы входа и авторизации с валидацией.
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Особенности:
+                                </span>
+                                Все данные сохранить в localStorage. При успешном входе - перенаправление на сайт.
+                            </p>
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Ссылка на код:
+                                </span>
+                                <a class="main__link-pass" href="https://github.com/ReDjanis/JS-practice/tree/forms"
+                                    target="_blank">
+                                    github.com/ReDjanis/JS-practice
+                                </a>
+                            </p>
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Дизайн:
+                                </span>
+                                самостоятельно.
+                            </p>
+                    </div>
+                </div>
+                <div class="main__item">
+
+                    <a class="main__link" href="https://redjanis.github.io/artigiani-boutique-project/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="main__img" src="./images/artigiani.png" alt="">
+                    </a>
+
+                    <div class="main__description">
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Веб-сайт:
+                            </span>
+                            Бутик одежды Artigiani
+                            <span class="main__text_blue">
+                                (учебный).
+                            </span>
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Примененные технологии:
+                            </span>
+                            scss, grid, native js.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Задача:
+                            </span>
+                            Сверстать страницу сайта по макету. Выполнить адаптив.
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Особенности:
+                                </span>
+                                -
+                            </p>
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Ссылка на код:
+                                </span>
+                                <a class="main__link-pass"
+                                    href="https://github.com/ReDjanis/artigiani-boutique-project/tree/grid-practice"
+                                    target="_blank">
+                                    github.com/ReDjanis/artigiani-boutique-project
+                                </a>
+                            </p>
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Дизайн:
+                                </span>
+                                по макету.
+                            </p>
+                    </div>
+                </div>
+                <div class="main__item">
+
+                    <a class="main__link" href="https://redjanis.github.io/diploma-react/#/login" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="main__img" src="./images/ordering_food.png" alt="">
+                    </a>
+
+                    <div class="main__description">
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Веб-сайт:
+                            </span>
+                            Сайт заказа еды
+                            <span class="main__text_blue">
+                                (дипломная работа).
+                            </span>
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Примененные технологии:
+                            </span>
+                            react, react-router, redux.
+                        </p>
+                        <p class="main__text">
+                            <span class="main__text_bold">
+                                Задача:
+                            </span>
+                            сверстать сайт заказа еды с возможностью добавления товаров в корзину и их удаления.
+                            Отдельно предусмотреть страницу регистрации/авторизации с сохранением данных пользователей в
+                            localStorage. Открывать доступ к сайту только для авторизованных пользователей.
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Особенности:
+                                </span>
+                                все данные по товарам, добавленным или удаленным из корзины, записываются в хранилище
+                                redux. Также запись этих данных дублируется в localStorage (чтобы при обновлении
+                                страницы можно было обновить данные из ls в redux).
+                            </p>
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Ссылка на код:
+                                </span>
+                                <a class="main__link-pass" href="https://github.com/ReDjanis/diploma-react/tree/master"
+                                    target="_blank">
+                                    github.com/ReDjanis/ordering_food
+                                </a>
+                            </p>
+                            <p class="main__text">
+                                <span class="main__text_bold">
+                                    Дизайн:
+                                </span>
+                                по макету.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
