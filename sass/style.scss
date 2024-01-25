@@ -71,6 +71,8 @@ body {
         height: 35px;
         overflow: hidden;
         cursor: pointer;
+        background-color: #fff;
+        border: 2px solid #ddcfc7;
 
         &:hover {
             opacity: 0.5;
@@ -83,14 +85,9 @@ body {
     }
 }
 
-.link-telegram {
-    background-color: #fff;
-    width: 33px;
-    height: 33px;
-}
-
 .link-email {
     background-color: rgb(72 80 151);
+
 }
 
 .email {
@@ -208,7 +205,7 @@ body {
             justify-content: center;
         }
 
-          &__item:first-child {
+        &__item:first-child {
             &::before {
                 content: "";
                 position: absolute;
